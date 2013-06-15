@@ -1,0 +1,33 @@
+<atv>
+  <head>
+    <script src="http://trailers.apple.com/utils.js"/>
+  </head>
+  
+  <body>
+		<listScrollerSplit id="com.sample.list-scroller-split">	      
+			<header>	        
+				<simpleHeader>	          
+					<title>{{VAL(title1)}}</title>	        
+          <subtitle>{{VAL(title2)}}</subtitle>
+        </simpleHeader>	      
+			</header>	      
+			
+			<menu>	        
+				<sections>	          
+					<menuSection>	            
+						<items>	              
+							<oneLineMenuItem id="{{VAL(key)}}">
+                {{COPY(Directory)}}
+								<label>{{VAL(title)}}</label>	                
+								<preview>
+									<link>{{URL(key)}}&amp;PlexConnect=ByFolderPreview</link>
+								</preview>
+							</oneLineMenuItem>	              
+							
+						</items>	          
+					</menuSection>	        
+				</sections>	      
+			</menu>	    
+		</listScrollerSplit>	  
+  </body>
+</atv>
